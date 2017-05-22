@@ -43,7 +43,7 @@ class UserMailer extends Mailer
   {
     $data = ['url' => route('email.verify', ['token' => $user->confirmation_token]), 'name' => $user->name];
 
-    $this->sendTo('zhihu_register', $user->email, $data);
+    $this->sendTo('ming_zhihu_register', $user->email, $data);
   }
 
 }
